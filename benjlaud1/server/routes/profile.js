@@ -30,13 +30,7 @@ router.get('/', function (req, res){
             console.log(str);
         });
     }
-    const profileReq = https.request(options, function(res) {
-        console.log('in callback');
-        console.log(res.statusCode);
-        res.on('data', function(d) {
-            process.stdout.write(d);
-        });
-    })
+    const profileReq = https.request(options,callback(data))
     profileReq.end();
     profileReq.on('error', function(e) {
         console.error(e);
