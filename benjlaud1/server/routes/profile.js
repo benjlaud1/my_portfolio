@@ -27,15 +27,15 @@ router.get('/', function (req, res){
 
         //the whole response has been recieved, so we just print it out here
         response.on('end', function () {
-            console.log(str);
+            console.log(str.substr(0,35));
+            res.status(200).send(str);
         });
     }
-    const profileReq = https.request(options,callback(data))
+    const profileReq = https.request(options,callback);
     profileReq.end();
     profileReq.on('error', function(e) {
         console.error(e);
     });
-    res.status(200).send('woof');
 
 }); // end GET profile
 

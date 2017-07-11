@@ -3,7 +3,6 @@ myApp.controller('mainController', ['$http', 'GithubAPI', function($http, Github
     var vm = this;
 
     vm.profile = GithubAPI.githubProfile();
-    GithubAPI.githubProfile();
     console.log('vm.profile:', vm.profile);
     
 }]); // end mainController
