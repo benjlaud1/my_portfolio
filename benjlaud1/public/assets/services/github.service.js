@@ -18,7 +18,7 @@ myApp.service('GithubAPI', function($http) {
 
     return $http({
       method: 'GET',
-      url: '/repos'
+      url: '/code'
     }).then(function(response) {
       console.log(response.data);
       return response.data;

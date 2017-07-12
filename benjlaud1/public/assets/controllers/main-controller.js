@@ -2,7 +2,9 @@ myApp.controller('mainController', ['$http', 'GithubAPI', function($http, Github
     console.log('mainController loaded');
     var vm = this;
 
-    vm.profile = GithubAPI.githubProfile();
-    console.log('vm.profile:', vm.profile);
+    GithubAPI.githubProfile().then(function(response){
+        vm.profile = response;
+        console.log('vm.profile:', vm.profile);
+    }); // end githubProfile
     
 }]); // end mainController

@@ -6,6 +6,7 @@ const app = express();
 
 // route includes
 const profile = require('./routes/profile');
+const code = require('./routes/code');
 const index = require('./routes/index');
 
 // define port
@@ -18,6 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // routes
 app.use('/profile', profile);
+app.use('/code', code);
 
 // route to index.js
 app.use('/*', index);
