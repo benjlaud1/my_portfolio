@@ -4,13 +4,11 @@ const https = require('https');
 const express = require('express');
 const router = express.Router();
 
-// get Github profile
-router.get('/', function (req, res){
-    console.log('in profile route');
+router.get('/', function(req, res){
     let options = {
         method: 'GET',
         host: 'api.github.com',
-        path: '/users/' + process.env.GITHUB_USERNAME,
+        path: '/users/' + process.env.GITHUB_USERNAME + '/repos',
         headers: {
             'Authorization': 'token '+ process.env.GITHUB_OAUTH_TOKEN,
             'User-Agent': process.env.GITHUB_USERNAME
@@ -31,12 +29,11 @@ router.get('/', function (req, res){
             res.status(200).send(str);
         });
     }
-    const profileReq = https.request(options,callback);
-    profileReq.end();
-    profileReq.on('error', function(e) {
+    const repoReq = https.request(options,callback);
+    repoReq.end();
+    repoReq.on('error', function(e) {
         console.error(e);
     });
-
-}); // end GET profile
+}); // end GET code
 
 module.exports = router;

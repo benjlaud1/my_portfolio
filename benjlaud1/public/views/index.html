@@ -12,17 +12,11 @@
         <script src="/assets/controllers/code-controller.js" charset="utf-8"></script>
         <script src="/assets/services/github.service.js" charset="utf-8"></script>
 
+        <link rel="stylesheet" type="" href="/vendors/bootstrap.min.css">
         <link href="/css/style.css" rel="stylesheet">
-        <base href="/">
+        <base href="/main">
     </head>
     <body ng-app="myApp">
-        served
-        <div ng-view>wtf</div>
-        <div class="">
-            <ul>
-                <li style="display: inline"><a href="/main" class="header-list col-xs-6">Main</a></li>
-                <li style="display: inline"><a href="/code" class="header-list col-xs-6">Code</a></li>
-            </ul>
-        </div>
+        <div ng-view></div>
     </body>
 </html>
