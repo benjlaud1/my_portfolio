@@ -1,13 +1,54 @@
 body {
-    background-color: whitesmoke;
+    background-color: black;
+    font-family: sans-serif;
 }
 
 .avatar-img {
-    width: 100%
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.left-side-bar {
+    margin-left: 0px;
+    background-color: #2a6592;
+    box-shadow: 0px 3px 3px black;
+    z-index: -1;
+}
+
+.main-contents {
+    margin: 0;
+    padding: 0;
 }
 
 .nav-bar {
-    background-color: grey;
+    background-color: #8ec3eb;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-bottom: 1px solid #8ec3eb;
+    box-shadow: 0px 5px #8ec3eb;
+}
+
+.nav-name {
+    text-align: center;
+    font-family: cursive;
+    font-size: 4rem;
+    margin-top: 10px;
+    color: #db9833;
+    text-shadow: 2px 2px 2px #db9833;
+}
+
+.ng-contents {
+    /*margin: 0;*/
+    /*width: 100%;*/
+    padding-top: 10px;
+    background-color: white;
+    z-index: -2;
+}
+
+.welcome {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
 }
