@@ -17,6 +17,18 @@
         <base href="/main">
     </head>
     <body ng-app="myApp">
-        <div ng-view></div>
+        <nav ng-include="'/views/routes/nav.html'"></nav>
+        <div class="container-fluid main-contents col-xs-12">
+            <div class="col-xs-2 left-side-bar">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img src="/images/Ben_Lauderbaugh.png" class="avatar-img shadowed">
+                </div>
+                <div>
+                    <h3 class="welcome">Welcome to my site!</h3>
+                </div>
+            </div>
+            <div ng-view class="col-xs-8 ng-contents"></div>
+        </div>
+        
     </body>
 </html>
