@@ -1,3 +1,13 @@
-<div>
-    main content
+<div class="container-fluid col-xs-12 page-buffer">
+    <div class="col-xs-10 col-xs-offset-1 page-inner-content">
+        <h2 class="blog-header">Life After Prime:</h2>
+        <h3 class="blog-sub-title">A blog about learning and growing after the most intense 20 weeks I've ever faced</h3>
+        <div ng-repeat="post in mc.blogPosts" class="blog-posts col-xs-12">
+            <h3 class="col-xs-9">{{ post.title }} </h3>
+            <h4 class="col-xs-3">{{ post.date | date:'MMM-dd-yyyy' }} :</h4>
+            <div class="col-xs-12">
+                <p>{{ post.blog }} </p>
+            </div>
+        </div>
+    </div>
 </div>

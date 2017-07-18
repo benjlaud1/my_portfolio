@@ -8,6 +8,7 @@ const app = express();
 const profile = require('./routes/profile');
 const code = require('./routes/code');
 const index = require('./routes/index');
+const blog = require('./routes/blog');
 
 // define port
 const port = process.env.PORT || 3001;
@@ -20,6 +21,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 // routes
 app.use('/profile', profile);
 app.use('/code', code);
+app.use('/blog', blog);
 
 // route to index.js
 app.use('/*', index);
