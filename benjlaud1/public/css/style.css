@@ -10,6 +10,16 @@ body {
     margin-bottom: 20px;
 }
 
+.blog-header {
+    font-family: cursive;
+    font-size: 2.5em;
+}
+
+.blog-sub-title {
+    font-family: Courier New, Courier, monospace;
+    font-size: 1.5em;
+}
+
 .left-side-bar {
     margin-left: 0px;
     background-color: #2a6592;
@@ -42,6 +52,7 @@ body {
 .ng-contents {
     /*margin: 0;*/
     /*width: 100%;*/
+    min-height: 100vh;
     padding-top: 10px;
     background-color: white;
     z-index: -2;

@@ -6,5 +6,13 @@ myApp.controller('mainController', ['$http', 'GithubAPI', function($http, Github
         vm.profile = response;
         console.log('vm.profile:', vm.profile);
     }); // end githubProfile
+
+    $http({
+        method: 'GET',
+        url: '/blog'
+    }).then(function(response) {
+        console.log('get blog:', response);
+        vm.blogPosts = response.data;
+    }); // end GET blog
     
 }]); // end mainController
