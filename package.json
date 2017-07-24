@@ -12,11 +12,14 @@
   "dependencies": {
     "angular": "^1.6.5",
     "angular-route": "^1.6.5",
+    "babel-cli": "^6.24.1",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "dotenv": "^4.0.0",
     "es6-request": "^2.2.4",
     "express": "^4.15.3",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }

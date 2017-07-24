@@ -13,6 +13,8 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
         controller: 'codeController',
         controllerAs: 'cc'
     })
+    .when('/react', {
+    })
     .otherwise('/main');
     $locationProvider.html5Mode(true);
 }]); // end myApp.config
