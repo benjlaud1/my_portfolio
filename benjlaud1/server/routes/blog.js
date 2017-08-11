@@ -3,6 +3,11 @@ const router = express.Router();
 
 const blogArray = [
     {
+        date: 'July 28th, 2017',
+        title: 'Learn!',
+        blog: 'I\'ve continued my journey to learn React and ES6. I find it amazing how React works and am just in awe as I build out my tutorial application. I look forward to each lesson and building my knowledge.'
+    },
+    {
         date: 'July 21, 2017',
         title: 'React!',
         blog: 'In my first week out of Prime I have taken on the challenge of learning ReactJS, a JavaScript library created by Facebook for building user interfaces. In libraries like JQuery or AngularJS, you build the HTML pages and link your code to the DOM by either selecting DOM elements by id or class, or using Angular’s binding. In React, however, you build sections of your HTML (known as Components) in JavaScript and use the server to render your HTML. Since these Components are stored in code, it becomes very easy to reuse a component over and over. Think about Facebook’s news feed, each post would be a Component. All posts will have a profile picture, a name of the person posting, a time, and their post’s contents.\n Check out Facebook’s React GitHub page for more info and tutorials.\n https://facebook.github.io/react/'
